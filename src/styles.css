@@ -1,7 +1,6 @@
 .body {
   font-family: sans-serif;
   text-align: center;
-  background-color: #606468;
   height: 100%;
   width: 100%;
 }
@@ -36,9 +35,21 @@
   text-align: center;
   color: black;
   text-transform: uppercase;
+  border: 2px solid yellow;
+  box-shadow: -10px 10px 10px -10px red;
+}
+.list-table {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-weight: 900;
+  border-bottom: 1px solid black;
 }
 .users-list {
   border: 2px solid yellow;
+  border-top: none;
+  display: flex;
+  justify-content: space-around;
 }
 .users-list p {
   color: black;

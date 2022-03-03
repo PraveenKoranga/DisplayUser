@@ -45,9 +45,20 @@ const App = () => {
             submit
           </button>
         </div>
+        <br />
 
         <div className="users">
-          <h1>users</h1>
+          {user.length === 0 ? (
+            ""
+          ) : (
+            <>
+              <h1 style={{ borderBottom: "1px solid black" }}>users</h1>
+              <div className="list-table">
+                <p>Username</p>
+                <p>password</p>
+              </div>
+            </>
+          )}
 
           {user.map((users) => {
             return (
